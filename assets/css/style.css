@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(126, 126, 126);
+}
+
+header {
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 0;
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: sticky;
+    background-image: url("/assets/images/sunsetPV.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 50px;
+    font-stretch: expanded;
+}
+
+header nav {
+    margin: 5px 5px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 25px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Format for all sections */
+
+.styles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 80%;
+    text-align: left;
+    margin: 2%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.sub-header {
+    padding: 10px;
+    font-style: italic;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sectional formats end */
+
+
+/* Current coding skill section */
+
+.skills li {
+    padding: 10px;
+    margin: 20px;
+    justify-content: space-evenly;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+}
+
+/* coding skill section ends */
+
+/* Work I have currently completed */
+
+.my-work {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.styles img {
+    max-block-size: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 30px;
+    align-self: center;
+}
+
+.links:hover {
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 5px;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .styles {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: left;
+        margin: 3.5%;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .styles img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
