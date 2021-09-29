@@ -53,6 +53,7 @@ header nav ul li a:hover {
     color: white;
     border-radius: 15px;
     text-shadow: none;
+    cursor: pointer;
 }
 
 /* Format for all sections */
